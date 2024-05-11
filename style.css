@@ -1,34 +1,59 @@
-@import'utilities.css';
-:root{
-    --primary:rgb(29,221,189);
-    --bgdark:rgb(12,12,12);
-   
-   --second:rgb(0,59,50);
-   --bglight:rgb(190,180,180);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-}
+
 *{
-    padding:0;
-    margin:0;
-    box-sizing:shadow;
+    box-sizing: border-box;
+    --bg-color: #B8DBD9;
+    --button-color: #04724D;
+    --nav-color: #586F7C;
+    --font-color-dark: #000000;
+    --font-color-light: #F4F4F9;
+    font-family: poppins, sans-serif;
 }
-header{
-    background-color:var(--bgdark)
-    header nav.left a{
-        color:white;
-        text-decoration:none;
-        margin-right:2rem ;
-        
-        transition:all.2s ease;
-    }
-    header nav.left a :hover{
-        color:var(--primary);
+body{
+    margin: 0;
+    padding: 0;
+    /* padding-top: 50px; */
+}
 
-    }
-    header nav{
-        padding:2rem 0;
-    }
-    header nav.logo{
-        margin-right:3rem
-    }
+header nav{
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+    background: linear-gradient(-90deg, var(--bg-color) 0%, 
+    var(--nav-color) 80%) ;
+    position: fixed;
+    width: 100%;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.nav-links a{
+    /* border: blue solid; */
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: var(--font-color-dark);
+}
+
+.nav-links a:hover{
+    color: #0e5425;
+    transition: all 0.1s ease-in-out;
+}
+
+nav button{
+   background-color: var(--button-color);
+   border: none;
+   padding: 10px;
+   color: var(--font-color-light);
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+nav button:hover{
+    background-color: #17a877;
+    transition: all 0.2s ease-in;
 }
