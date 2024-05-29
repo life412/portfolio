@@ -88,7 +88,7 @@ nav button:hover{
 }
 
 .About{
-    height: 100vh;
+    min-height: 100vh;
     padding: 60px 30px 0;
     background-color: var(--bg-color);
 }
@@ -97,32 +97,53 @@ nav button:hover{
     font-size: 5vw;
     margin: 70px 0 0;
 }
-.About h1{
-
-}
 
 .About p{
-
+    margin-bottom: 0;
 }
 
 #Projects{
-    height: 100vh;
+    padding-top: 30px;
+    min-height: 100vh;
     background-color: var(--bg-color);
 }
 
 .project-title{
-    color: red;
-    border: rebeccapurple dotted;
-    text-align: center;
+    /* color: red; */
+    /* border: rebeccapurple dotted; */
+    text-align: center; 
+}
+
+.project-title h1{
+    margin: 0 0 20px; 
 }
 
 .project-container{
-    border: #000000 solid;
+    /* border: #000000 solid; */
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-box{
-    border: #49e396 solid;
+    margin:10px 0.5rem;
+    border-radius: 10px;
+    max-width: 300px;
+    border: var(--font-color-dark) solid 1px;
+}
 
+.project-box h4, .project-box p{
+    padding: 0 1rem;
+}
+
+.project-box h4{
+    margin: 10px 0 0;   
+}
+
+.project-box img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
 }
