@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="stylesheet" href="./style.css">
-    
+    <link rel="stylesheet" href="./hover.css">
     <script src="script.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
 
 </head>
-<body>
+<body> 
     <header>
             <nav class="flex items-center justify-between">
             <div class="nav-links bold">
-                <a href="#Home">Home</a>
+               <div  class="profile"><a href="#Home">Home</a>
+            </div> 
                 <a href="#About">About</a>
                 <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
         </div>
             <button class="bold">
-                Contact
+                Download CV
             </button>
 
             </nav>
@@ -31,18 +33,18 @@
             <p>A Software Engineer</p>
         </section>
         <section id="About" class="About">
-            <div>
+            <div >
                 <h1>Introduction</h1>
                 <h3>Overview</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quo nisi accusamus rerum, temporibus amet 
-                    reiciendis sapiente voluptatibus. Et delectus labore eligendi! Iste culpa magnam ducimus accusantium cum 
-                    in ipsam aspernatur perferendis maxime corrupti quia, explicabo non eum perspiciatis voluptatibus, facilis 
-                    ut hic! Expedita magni quaerat est rem labore, atque illo dicta perspiciatis hic non quas, accusamus ab facilis 
-                    voluptatem voluptatibus distinctio! Quasi, nihil? Necessitatibus quaerat neque assumenda cumque a accusantium 
-                    natus recusandae tempora, officia quas esse non quidem modi, doloribus odio, tenetur libero sunt odit obcaecati. 
-                    Natus reiciendis adipisci ex nobis. Deserunt ex porro praesentium, explicabo adipisci illo magnam.
-                </p>
+               <div class="about-page"> <p> 
+                  I'm a software engineering student at Adama Science and technology university.
+                    Over the course of my studies, I've developed a real passion for developing websites, and
+                     I've been lucky enough to work on all sorts of projects. I'm really excited to share my journey
+                      with you and showcase the work I've been doing. Please feel free to take a look around my portfolio to learn
+                       more about my background, the skills I've developed, and the projects I've been a part of during my time at
+                       ASTU. I'm looking forward to connecting with you!
+                </p> 
+            </div>
             </div>
         </section> 
         <section id="Projects">
@@ -51,45 +53,62 @@
             </div>
            <div class="project-container">
                  <div class="project-box">
-                  <img src="lounge.jpg" alt="lounge management" class="image-class">
+                  <img src="./lounge.jpg" alt="lounge management" class="image-class">
                   <h4>lounge management</h4>
                   <p>I participated as a designer and developer in a lounge management system.
                     this system simplified the self service process in our university lounge.
                   </p>
                 </div> 
                 <div class="project-box">
-                <img src="delivery.jpg" alt="delivery" class="image-class">
+                <img src="./delivery.jpg" alt="delivery" class="image-class">
                 <h4>online delivery system</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Pariatur, natus? Eveniet fuga dolor ipsam et recusandae 
-                    facilis minima mollitia libero.
-                </p>
+                     made it easier than ever for our customers to browse, purchase, and receive the products they need. 
+                </p> 
                </div>
                <div class="project-box">
                 <div class="project_name_and_image"></div>
-                <img src="event.jpg" alt="event" class="image-class">
+                <img src="./event.jpg" alt="event" class="image-class">
                 <h4>event management system</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Pariatur, natus? Eveniet fuga dolor ipsam et recusandae 
-                    facilis minima mollitia libero.
+                    provided a comprehensive suite of tools to help organizers plan and execute their 
+                    gatherings with ease. Robust budgeting features, interactive timelines, and vendor 
+                    coordination modules ensured every event ran smoothly.
                 </p>
                </div>
                <div class="project-box">
                 <div class="project_name_and_image"></div>
-                <img src="doc.jpg" alt="documentation" class="image-class">
+                <img src="./doc.jpg" alt="documentation" class="image-class">
                 <h4>software documentation</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Pariatur, natus? Eveniet fuga dolor ipsam et recusandae 
-                    facilis minima mollitia libero.
+                    As the lead developer, I took great care in creating comprehensive software documentation to support
+                     the long-term viability of the management platform.
                 </p>
                </div> 
 
 
             </div>
 
+
+        </section>
+        <section id="Contact" class="Contact"> 
+            <div class="contact-card">
+                <h1>Contact me</h1>
+           
+            <form >
+                <label for="">Enter Your Name</label>
+                 <input type="text" placeholder="Your Name">
+                 <label for="">Enter Your address</label>
+                 <input type="email" placeholder="Your Email">
+                 <label for="">Enter Message To Send</label>
+                 <textarea placeholder="Your Message"></textarea>
+                 <div class="button-container">
+                    <button type="submit">Send</button>
+                 </div>
+
+             </form>
+            </div>
+            
 
         </section>
         

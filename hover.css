@@ -1,0 +1,17 @@
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+  } 
+  
+  .nav-links li.home-link:hover {
+    font-size: 20px;
+  } 
