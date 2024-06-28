@@ -20,9 +20,11 @@
                 <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact</a>
         </div>
-            <button class="bold">
-                Download CV
-            </button>
+    <!-- i change it to download div and now add you cv on the repo then add the file path inside the href=''  -->
+        <a href="path/to/your/cv.pdf" class="bold" download>
+            Download CV
+        </a>
+        
 
             </nav>
     
@@ -91,26 +93,29 @@
 
 
         </section>
+
+        <!-- here you have to use additional sites to provide you a server cause js only can't do the email sending process ..... for now i inserted my email and it worked 
+        here is the steos you should follow to add yours 
+                    1)Go to Formspree.
+                    2)Sign up and create a new form.
+                    3)Get your form ID from the Formspree dashboard and replace your_form_id in the form action URL.  -->
         <section id="Contact" class="Contact"> 
             <div class="contact-card">
                 <h1>Contact me</h1>
-           
-            <form >
-                <label for="">Enter Your Name</label>
-                 <input type="text" placeholder="Your Name">
-                 <label for="">Enter Your address</label>
-                 <input type="email" placeholder="Your Email">
-                 <label for="">Enter Message To Send</label>
-                 <textarea placeholder="Your Message"></textarea>
-                 <div class="button-container">
-                    <button type="submit">Send</button>
-                 </div>
-
-             </form>
+                <form action="https://formspree.io/f/xzzpplwj" method="POST">
+                    <label for="name">Enter Your Name</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <label for="email">Enter Your Email</label>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <label for="message">Enter Message To Send</label>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <div class="button-container">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
             </div>
-            
-
         </section>
+        
         
     </main>
     
