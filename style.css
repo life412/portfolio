@@ -90,26 +90,49 @@ nav button:hover{
     font-style: italic;
     font-size: 20px;
 }
-
-.About{
+.About {
     min-height: 100vh;
     padding: 60px 30px 0;
     background-color: var(--bg-color);
-}
- 
-.About h1{
+  }
+  
+  .About img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .About h1 {
     font-size: 5vw;
     margin: 70px 0 0;
-}
-
-.About p{
+  }
+  
+  .About p {
     margin-bottom: 0;
-}
-.about-page{
-    width: 50%;
-    max-width: 50vw;
-}
-
+  }
+  
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    .about-page {
+      flex-direction: row;
+    }
+  
+    .About img {
+      max-width: 400px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .About img {
+      max-width: 500px;
+    }
+  }
 #Projects{
     padding-top: 30px;
     min-height: 100vh;
@@ -134,12 +157,18 @@ nav button:hover{
 }
 
 .project-box{
-    margin:10px 0.5rem;
+    margin:10px 0.9rem;
     border-radius: 10px;
     max-width: 300px;
-    border: var(--font-color-dark) solid 1px;
+    box-shadow: none;
+    /* border: var(--font-color-dark) solid 1px; */
+    /* background-color: var(--bg-color); */
+    background-color: #afd1cfd0;
 }
-
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 .project-box h4, .project-box p{
     padding: 0 1rem;
 }
